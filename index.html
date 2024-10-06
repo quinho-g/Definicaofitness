@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definição fitness I.A! pagina de vendas.</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o CSS -->
+</head>
+<body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const faders = document.querySelectorAll('.fade-in');
+        
+        const appearOptions = {
+            threshold: 0.1,
+            rootMargin: "0px 0px -100px 0px"
+        };
+
+        const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) {
+                    return;
+                } else {
+                    entry.target.classList.add('appear');
+                    appearOnScroll.unobserve(entry.target);
+                }
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    });
+</script>
+
+  <!--------Inicio---------------->
+
+  <section id="Inicio" class="fade-in">
+    <div class="container1">
+        <!-- Div que contém o título e o subtítulo -->
+        <div class="text-p">
+            <h1 class="titulo">Definição fitness I.A</h1>
+            <video class="vide" controls>
+              <source src="vid1.mp4" type="video/mp4">
+              Seu navegador não suporta o elemento de vídeo.
+            </video>
+            <h2 class="stitulo">METODOLOGIA DE DEFINIÇÂO FITNESS</h2>
+        </div>
+        <img src="img1.png" class="imagen">     
+    </div>
+    <div class="centro">
+       <a href="https://quinho-g.github.io/PVDefini-ofitnessI.A/" class="botaopp">
+         <h4>Ver meu produto</h4></a>
+    </div>
+   </section>
+
+  <!-------- SOBRE ---------->
+ <section id="Sobre" class="fade-in">
+  <div class="centro">
+    <h2> Metodologia Fitness I.A</h2>
+  </div>
+   <div class="grid1">
+    <div class="tela2">
+      <p class="paragrafo"><b>Você já sonhou com o corpo ideal?</b> Talvez queira se sentir mais definida, usar as roupas de antes ou receber elogios sem se preocupar com julgamentos. Parece distante, não é?</p>
+      <p class="paragrafo">Agora, espero que você não tenha <b>caído na ilusão</b> de que vai alcançar esse corpo com as <b>“dicas mágicas” do TikTok</b> ou tomando um daqueles <b>chás milagrosos</b> que vemos por ai. A realidade é simples: <b>dietas restritivas e sem uma base nutricional não te trarão resultados duradouros.</b></p>
+      <p class="paragrafo">Ok, pode ser que você perca uns <b>2 ou 4 quilos com muito esforço</b>, mas estou aqui para falar com quem quer resultados de verdade. Se você está <b>cansada de perder tempo</b> com modismos, e quer <b>transformar seu corpo agora</b>, preciso te apresentar o "Definição Fitness I.A."</p>
+      <p class="paragrafo"><b>O que é?</b> É uma metodologia de definição corporal totalmente <b>adaptável à sua rotina</b>, desenvolvida com inteligência artificial. São mais de <b>200 mil downloads e feedbacks positivos só no Brasil!</b> Já ajudamos milhares de pessoas ao redor do mundo a alcançar seus objetivos com <b>segurança e rapidez.</b></p>
+      <p class="paragrafo"><b>Por que funciona?</b> Nossa metodologia foi aprovada por diversos especialistas na área e traz <b>resultados visíveis em apenas 30 dias.</b> E se você enfrentar dificuldades, terá acesso direto ao nosso <b>suporte exclusivo</b>, onde poderá tirar suas dúvidas com a própria IA. ao entra em contato com nosso produtor.</p>
+      <p class="paragrafo"><b>Bônus!</b> Ao adquirir o "Definição Fitness I.A." hoje, você ainda recebe gratuitamente um <b>Guia Completo de Emagrecimento</b> – perfeito para quem enfrenta problemas com o sobrepeso.</p>
+      <p class="paragrafo"><b>Garantia de satisfação!</b> Estamos tão confiantes no nosso método que oferecemos uma <b>garantia de 30 dias.</b> Se você não estiver satisfeito com os resultados, <b>devolvemos seu investimento.</b> Simples assim.</p>
+    </div>
+    <div class="centro">
+       <h2>Veja a mudança acontecer no seu corpo e na sua vida com seus proprios olhos!</h2>
+    </div>
+    <div class="centro">
+       <a href="https://quinho-g.github.io/PVDefini-ofitnessI.A/" class="botaopp">
+         <h4>Conhecer Metodologia</h4></a>
+    </div>
+    <div class="centro">
+       <h2>Quero ver seus resultados em 30 dias!</h2>
+     </div>
+     </div>
+ </section>
+        <div class="centro">
+      <h3>®️Original; 2024 Production: I.A Generation. Todos os direitos reservados.</h3>
+      <a href="#Inicio">Inicio.</a>
+      <a href="#Sobre">Sobre.</a>
+      <h3> Formas de contato.</h3>
+      <a href="mailto:hotquinho@gmail.com">G-Mail.</a>
+      <a href="https://wa.me/5519999286465">Whatsapp</a>
+    </div>
+  </body>
+</html>
