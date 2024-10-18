@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definição fitness! pagina de vendas.</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link para o CSS -->
+    <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '466788166511463');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=466788166511463&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+<body>
+<section id="Inicio">
+    <div class="container1">
+        <!-- Div que contém o título e o subtítulo -->
+        <div class="text-p">
+            <h1 class="titulo">Seus resultados estão a um passo! </h1>
+            <h2 class="stitulo">Bem-vindo ao seu caminho para a definição muscular! Antes de apresentarmos o nosso produdo. Por favor responda as perguntas abaixo, para entendermos seus objetivos!</h2>
+        </div>
+        <img src="img1.png" class="imagen">     
+    </div>
+  </section>
+
+<div id="quiz-container">
+    <div class="question" id="question1">
+        <h1 class="branco">Responda cada pergunda com sinceridade!</h1>
+        <h2 class="branco">Você treina a quanto tempo?</h2>
+        <div class="answer" onclick="nextQuestion('question1', 'question2')">Treino menos que 3 meses!</div>
+        <div class="answer" onclick="nextQuestion('question1', 'question2')">Treino de 3 há 8 Meses!</div>
+        <div class="answer" onclick="nextQuestion('question1', 'question2')">Treino de 8 há 12 Meses!</div>
+        <div class="answer" onclick="nextQuestion('question1', 'question2')">Treino de 12 há 18 Meses!</div>
+        <div class="answer" onclick="nextQuestion('question1', 'question2')">Treino há mais de 18 Meses!</div>
+    </div>
+
+    <div class="question" id="question2" style="display: none;">
+        <h1 class="branco">Responda cada pergunda com sinceridade!</h1>
+        <h2 class="branco">Qual é o nivel dos seus treinos?</h2>
+        <div class="answer" onclick="nextQuestion('question2', 'question3')">Treinos de iniciantes!</div>
+        <div class="answer" onclick="nextQuestion('question2', 'question3')">Treinos de intermediarios!</div>
+        <div class="answer" onclick="nextQuestion('question2', 'question3')">Treinos de avançados!</div>
+        <div class="answer" onclick="nextQuestion('question2', 'question3')">Não sei o nivel do meus treinos!</div>
+    </div>
+
+    <div class="question" id="question3" style="display: none;">
+        <h1 class="branco">Responda cada pergunda com sinceridade!</h1>
+        <h2 class="branco">Qual a sua frequência de treinos?</h2>
+        <div class="answer" onclick="nextQuestion('question3', 'question4')">3/1 (Treina 3 dias e descança 1)</div>
+        <div class="answer" onclick="nextQuestion('question3', 'question4')">4/1 (Treina 4 dias e descança 1)</div>
+        <div class="answer" onclick="nextQuestion('question3', 'question4')">5/2 (Treina 5 dias e descança 2)</div>
+        <div class="answer" onclick="nextQuestion('question3', 'question4')">6/1 (Treina 6 dias e descança 1)</div>
+    </div>
+
+    <div class="question" id="question4" style="display: none;">
+        <h1 class="branco">Responda cada pergunda com sinceridade!</h1>
+        <h2 class="branco">Você planeja os seus treinos?</h2>
+        <div class="answer" onclick="nextQuestion('question4', 'question5')">sim, planejo meus treinos!</div>
+        <div class="answer" onclick="nextQuestion('question4', 'question5')">sim. mas quero algo mais eficaz!</div>
+        <div class="answer" onclick="nextQuestion('question4', 'question5')">não, não planejo meus treinos!</div>
+        <div class="answer" onclick="nextQuestion('question4', 'question5')">não, mas gostaria de aprender!</div>
+    </div>
+ 
+    <div class="question" id="question5" style="display: none;">
+        <h1 class="branco">Responda cada pergunda com sinceridade!</h1>
+        <h2 class="branco">Você planeja a sua dieta?</h2>
+        <div class="answer" onclick="nextQuestion('question5', 'question6')">sim. planejo minha dieta!</div>
+        <div class="answer" onclick="nextQuestion('question5', 'question6')">sim. mas quero algo mais eficaz!</div>
+        <div class="answer" onclick="nextQuestion('question5', 'question6')">não, não planejo minha dieta!</div>
+        <div class="answer" onclick="nextQuestion('question5', 'question6')">não, mas gostaria de aprender!</div>
+    </div>
+  
+    <div class="question" id="question6" style="display: none;">
+        <h1 class="branco">Responda cada pergunda com sinceridade!</h1>
+        <h2 class="branco">Qual é o seu objetivo na academia?</h2>
+        <div class="answer" onclick="nextQuestion('question6', 'question7')">ganhar massa magra</div>
+        <div class="answer" onclick="nextQuestion('question6', 'question7')">ganhar força</div>
+        <div class="answer" onclick="nextQuestion('question6', 'question7')">ganhar auto estima</div>
+        <div class="answer" onclick="nextQuestion('question6', 'question7')">perder peso</div>
+        <div class="answer" onclick="nextQuestion('question6', 'question7')">todos acima</div>
+    </div>
+
+    <div class="question" id="question7" style="display: none;">
+        <h1 class="branco">Responda cada pergunda com sinceridade!</h1>
+        <h2 class="branco"> Seria bom ter acesso a um plano de treino personalizavel?</h2>
+        <div class="answer" onclick="nextQuestion('question7', 'question8')">Sim, seria ótimo!</div>
+        <div class="answer" onclick="nextQuestion('question7', 'question8')">Vai me ajudar muito!</div>
+        <div class="answer" onclick="nextQuestion('question7', 'question8')">Não sei se é pra min!</div>
+    </div>
+
+    <div class="question" id="question8" style="display: none;">
+        <h1 class="branco">Responda cada pergunda com sinceridade!</h1>
+        <h2 class="branco"> E a um plano de dieta personalizavel?</h2>
+        <div class="answer" onclick="nextQuestion('question8', 'question9')">Sim, seria ótimo!</div>
+        <div class="answer" onclick="nextQuestion('question8', 'question9')">Vai me ajudar muito!</div>
+        <div class="answer" onclick="nextQuestion('question8', 'question9')">Não sei se é pra min!</div>
+    </div>
+
+    <div class="question" id="question9" style="display: none;">
+        <h1 class="branco">Responda cada pergunda com sinceridade!</h1>
+        <h2 class="branco"> Gostaria de ter em mãos algo que realmente pode te trazer resultados?</h2>
+        <div class="answer" onclick="nextQuestion('question9', 'end')">Sim, seria ótimo!</div>
+        <div class="answer" onclick="nextQuestion('question9', 'end')">Vai me ajudar muito!</div>
+        <div class="answer" onclick="nextQuestion('question9', 'end')">Não sei se é pra min!</div>
+    </div>
+
+
+
+    <div class="centro"id="end" style="display: none;">
+        <h2 class="branco"> Obrigado por participar!</h2>
+        <h3 class="branco"> Com basé na suas respostas, podemos ter a certeza que o nosso produto é para você!</h3>
+        <h3 class="branco"> Click no botão abaixo e obtenha seu produto</h3>
+        <a href="https://quinho-g.github.io/PVDefinicaofitness/" class="botaopp">
+         <h4>Conhecer meu produto!</h4></a>
+    </div>
+</div>
+
+<script>
+    function nextQuestion(current, next) {
+        // Oculta a pergunta atual
+        document.getElementById(current).style.display = 'none';
+        // Exibe a próxima pergunta
+        document.getElementById(next).style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
